@@ -1,5 +1,5 @@
 from flask import Blueprint,render_template,request,redirect
-from shorterner import shortener
+from app.shorterner import shortener
 
 myshortener = shortener()
 short = Blueprint('short', __name__)

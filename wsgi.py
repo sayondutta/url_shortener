@@ -1,4 +1,4 @@
-from router import short
+from app.router import short
 from flask import Flask
 
 if __name__ == "__main__":
