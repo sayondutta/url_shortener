@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>newlink</title>
+</head>
+<body>
+    <h2>Your short URL</h2>
+    Old Link: <b>{{ origurl }}</b> <br>
+        New Link: <b>{{ url_for('short.redirect_to_url',short_url=newurl,_external=True) }}</b> <br>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL_Short</title>
+</head>
+<body>
+<h1>URL Shortener</h1>
+    <form method="POST" action="{{ url_for('short.add_link')}}">
+        <textarea name="originalurl" rows="8" cols="80"></textarea>
+<!--        <input type="text" name="original_url">-->
+        <input type="submit" name="sub_but">
+    </form>
+</body>
+</html>
