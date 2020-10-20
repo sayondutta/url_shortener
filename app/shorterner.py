@@ -1,3 +1,4 @@
+import random
 class shortener(object):
     def __init__(self):
         self.book = {}
@@ -25,7 +26,9 @@ class shortener(object):
         return cur_id
 
     def write(self,url):
-        cur_id = 'moriarty'+self.encode(self.id)
+        s = [self.chars[random.randint(0,61)] for i in range(6)]
+        s = ''.join(s)
+        cur_id = s+self.encode(self.id)
         self.book[url] = cur_id
         self.revbook[cur_id] = url
         self.id += 1
