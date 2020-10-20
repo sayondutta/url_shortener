@@ -1,4 +1,4 @@
-from flask import Flask,Blueprint,render_template,request,redirect
+from flask import Blueprint,render_template,request,redirect
 from shorterner import shortener
 
 myshortener = shortener()
@@ -22,12 +22,3 @@ def add_link():
     print(myshortener.revbook)
     print(myshortener.book)
     return render_template('new_link.html',newurl=new_url,origurl=org_url)
-
-@short.route('/stats')
-def stats():
-    pass
-
-if __name__ == "__main__":
-    app = Flask(__name__)
-    app.register_blueprint(short)
-    app.run()
