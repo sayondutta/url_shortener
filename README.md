@@ -3,6 +3,5 @@ URL Shortener FLASK based - Running on Heroku
 
 
 <p> Switch to master branch and clone the repo <p>
-```cd url_shortener```
-```python wsgi.py```
-
+<br>```cd url_shortener```</br>
+<br>```python wsgi.py```</br>
